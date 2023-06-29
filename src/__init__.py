@@ -15,5 +15,7 @@ def create_app():
     migrate.init_app(app, db)
 
     from src.models import Book
+    from src import routes
+    app.register_blueprint(routes.book_api)
 
     return app

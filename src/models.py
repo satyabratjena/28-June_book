@@ -17,3 +17,6 @@ class BookSchema(Schema):
         fields = ("author_id", "title", "cover_image", "pages", "releaseDate", "isbn")
 
 books_schema = BookSchema()
+
+# class PostBookSchema(BookSchema):
+#     cka
